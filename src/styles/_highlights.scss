@@ -1,17 +1,7 @@
+@use 'variaveis';
+
 .highlights{
     padding: 5.6vw 20px;
-    h2{
-        display: block;
-        width: 450px;
-        margin: 0 auto;
-        font-family: 'Bebas Neue', sans-serif;
-        text-align: center;
-        color: #433c6a;
-
-        @media (max-width:768px){
-            width: 60vw;
-        }
-    }
 
     &__cards{
         display: grid;
@@ -29,7 +19,7 @@
                     width: 100%;
                     border-radius: 8px;
                     @media (max-width:768px) {
-                        height: 400px;
+                        height: 240px;
                     }
                 }
             }   
@@ -39,8 +29,8 @@
                 padding: 20px;
                 margin-top: 5px;
                 border-radius: 8px;
-                border: 1px solid #625995;
-                background-color: #433c6a;
+                border: 1px solid variaveis.$lightPuple;
+                background-color: variaveis.$puple;
 
                 @media (max-width:768px) {
                     margin-bottom: 20px;
@@ -59,8 +49,8 @@
                 height: 100%;
                 padding: 16px 24px;
                 border-radius: 8px;
-                border: 1px solid #433c6a;
-                background-color: #3a345da1;
+                border: 1px solid variaveis.$puple;
+                background-color: variaveis.$darkPurple;
 
                 @media (max-width:768px) {
                     margin-bottom: 20px;
@@ -72,7 +62,6 @@
                     font-weight: 400;
                 }
                 p{
-                    text-transform: lowercase;
                     text-align: left;
                 }
             }

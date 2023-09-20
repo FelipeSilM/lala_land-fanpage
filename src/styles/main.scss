@@ -1,6 +1,7 @@
 @use "variaveis";
-@use 'hero';
-@use 'highlights';
+@use "header";
+@use "hero";
+@use "highlights";
 
 *{
     margin: 0;
@@ -10,6 +11,10 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
+}
+
+body{
+    position: relative;
 }
 
 @font-face {
@@ -33,9 +38,20 @@ h1{
 }
 
 .title{
+
+    display: block;
+    width: 450px;
+
+    margin: 0 auto;
+
     font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: #433c6a;
+    
 
     @media (max-width:768px) {
         font-size: 2rem;
+        width: 200px;
     }
 }
