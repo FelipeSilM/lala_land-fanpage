@@ -1,0 +1,41 @@
+@use "variaveis";
+@use 'hero';
+@use 'highlights';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+@font-face {
+    font-family: Yasashii;
+    src: url(../../assets/fonts/Yasashii-regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Yasashii;
+    src: url(../../assets/fonts/Yasashii-bold.ttf);
+    font-weight: 700;
+}
+
+body{
+    background-color: variaveis.$corDeFundo;
+}
+
+h1{
+    color: white;
+}
+
+.title{
+    font-size: 4rem;
+
+    @media (max-width:768px) {
+        font-size: 2rem;
+    }
+}
