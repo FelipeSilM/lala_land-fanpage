@@ -2,6 +2,7 @@
 @use "header";
 @use "hero";
 @use "highlights";
+@use "banner";
 
 *{
     margin: 0;
@@ -11,10 +12,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
-}
-
-body{
-    position: relative;
+    user-select: none;
 }
 
 @font-face {
@@ -54,4 +52,8 @@ h1{
         font-size: 2rem;
         width: 200px;
     }
+}
+
+.text-small{
+    font-size: 14px;
 }
