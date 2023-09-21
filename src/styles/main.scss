@@ -11,7 +11,7 @@
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: white;
+    color: variaveis.$white;
     user-select: none;
 }
 
@@ -28,11 +28,11 @@
 }
 
 body{
-    background-color: variaveis.$corDeFundo;
+    background-color: variaveis.$backgroundColor;
 }
 
 h1{
-    color: white;
+    color: variaveis.$white;
 }
 
 .title{
@@ -45,7 +45,7 @@ h1{
     font-size: 4rem;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    color: #433c6a;
+    color: variaveis.$puple;
     
 
     @media (max-width:768px) {

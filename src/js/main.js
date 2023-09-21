@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function(){
     const heroSection = document.querySelector(".hero")
-    const alturaHero = heroSection.clientHeight
+    const heroHeight = heroSection.clientHeight
 
     window.addEventListener('scroll', function(){
-        const posicaoAtual = window.scrollY
+        const currentPosition = window.scrollY
 
-        if(posicaoAtual > alturaHero){
-            exibeArrow()
+        if(currentPosition > heroHeight){
+            showArrow()
         }else{
-            ocultaArrow()
+            hideArrow()
         }
     })
 })
 
-function exibeArrow(){
+function showArrow(){
     const a = document.querySelector(".header__arrow__top")
     a.classList.add("header__arrow__top--is-visible")
 }
-function ocultaArrow(){
+function hideArrow(){
     const a = document.querySelector(".header__arrow__top")
     a.classList.remove("header__arrow__top--is-visible")
 }
