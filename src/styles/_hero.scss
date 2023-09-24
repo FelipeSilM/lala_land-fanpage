@@ -5,7 +5,6 @@
 .hero{
     min-height: 100vh;
     padding-top: 50px;
-    margin-top: -84px;
     
     background-image: url(../../dist/images/hero_desktop.jpg);
     background-size: cover;
@@ -48,6 +47,10 @@
                 align-self: center;
             }
             
+            @media (max-width:768px) and (orientation: landscape){
+                align-self: flex-start;
+            }
+
             .film-title{
                 margin: 0 auto;
                 font-family: Yasashii;
